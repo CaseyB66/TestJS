@@ -1,0 +1,79 @@
+<html>
+  <head><title>Terrarium example</title>
+  <style>
+  table,th,td
+  {
+  border:1px solid black;
+  border-collapse:collapse;
+  }
+  th, td
+  {
+  padding:6px;
+  }
+  </style>  
+  </head>
+  <body>
+  <font face="courier" color="black">
+  <h3 id="myHeader">
+  Terrarium example adapted from 
+  <br>'Eloquent Javascript' by Marijn Haverbeke,
+  <br> 2011, No Starch Press</h3>
+  <p>
+  <table>
+  <caption><b>Items in the Terrarium:<b></caption>  
+  <tr>
+    <th>Synbol</td>
+    <th>What it is</td>
+    <th>What it does</td>
+  </tr>
+  <tr>
+    <td>#</td>
+    <td>Rigid object</td>
+    <td>Bugs can not penetrate these barriers</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>Lichen</td>
+    <td>Bugs eat lichen to grow and reproduce</td>
+  </tr>
+  <tr>
+    <td>o</td>
+    <td>Stupid Bug</td>
+    <td>Only goes south</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Bouncing Bug</td>
+    <td>Bounces diagonally</td>
+  </tr>
+  <tr>
+    <td>~</td>
+    <td>Drunk Bug</td>
+    <td>Bounces randomly</td>
+  </tr>
+  <tr>
+    <td>&</td>
+    <td>Circle Bug</td>
+    <td>Goes in a circle</td>
+  </tr>
+  <tr>
+    <td>c</td>
+    <td>Lichen Eater</td>
+    <td>Eats Lichen,<br>grows and reproduces</td>
+  </tr>
+  </table>
+  </p>
+  <hr>
+  <p>
+  Click buttons to watch the bugs move, the lichen eaters eat and grow<br>
+  But as lichen disappears, the lichen eaters die out.
+  </p>
+  </font>
+  <button onclick="singleStep()">Step Bugs</button>
+  <button onclick="step100()">100 Steps</button>
+  <button onclick="step500()">500 Steps</button>
+  <DIV id="TElmnt">Terrarium</DIV>  
+  <script type="text/javascript" src="object1.js">
+  </script>
+  </body>
+</html>
